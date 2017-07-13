@@ -1,0 +1,24 @@
+{
+  "name": "aircast-rpi",
+  "version": "1.0.0",
+  "description": "AirCast Rpi",
+  "main": "rpi.js",
+  "scripts": {
+    "test": "node rpi.js"
+  },
+  "keywords": [
+    "aircast",
+    "rpi"
+  ],
+  "author": "randy beros",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.3.0",
+    "config": "^1.25.1",
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "needle": "^1.6.0",
+    "path": "^0.12.7"
+  }
+}
