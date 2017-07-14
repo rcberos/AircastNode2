@@ -155,6 +155,17 @@ function temp2Controller($scope, $window, $timeout, $http, temp2Src, callback){
 
 function temp3Controller($scope, $window, $timeout, $http, temp2Src, callback, $q){
 
+	var widthMultiplier = 1;
+	var heightMultiplier = 1;
+	$scope.temp3DivStyle = {
+	    "position": "absolute",
+	    "top":      "0px",
+	    "left":     "0px",
+	    "width":    $window.innerWidth*widthMultiplier+"px",
+	    "height":   $window.innerHeight*heightMultiplier+"px",
+	    "background-color": "black"
+	}
+
 	weather = function() {
         var d = $q.defer();
         $http({
